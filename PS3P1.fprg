@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="dimpl"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-12 05:04:17 PM"/>
+        <attribute name="created" value="ZGltcGw7REVTS1RPUC1DTU5ESUk3OzIwMjMtMDMtMTI7MDI6NTc6NTcgUE07Mjg5MQ=="/>
+        <attribute name="edited" value="ZGltcGw7REVTS1RPUC1DTU5ESUk3OzIwMjMtMDMtMTI7MDU6MDQ6MTcgUE07MTsyOTkw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="stockticker" type="String" array="False" size=""/>
+            <declare name="numberofshare" type="Real" array="False" size=""/>
+            <declare name="costpershare" type="Real" array="False" size=""/>
+            <declare name="amountinvested" type="Real" array="False" size=""/>
+            <input variable="stockticker"/>
+            <input variable="numberofshare"/>
+            <input variable="costpershare"/>
+            <assign variable="amountinvested" expression="numberofshare*costpershare"/>
+            <assign variable="stockticker" expression="&quot;MSFT&quot;"/>
+            <output expression="&quot;Amount Invested&quot; &amp; amountinvested" newline="True"/>
+            <output expression="stockticker" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
