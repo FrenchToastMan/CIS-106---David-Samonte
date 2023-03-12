@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="dimpl"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-12 05:40:44 PM"/>
+        <attribute name="created" value="ZGltcGw7REVTS1RPUC1DTU5ESUk3OzIwMjMtMDMtMTI7MDU6MzM6NTYgUE07Mjg4Nw=="/>
+        <attribute name="edited" value="ZGltcGw7REVTS1RPUC1DTU5ESUk3OzIwMjMtMDMtMTI7MDU6NDA6NDQgUE07MTsyOTkw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="startingamount" type="Real" array="False" size=""/>
+            <declare name="amountperfriend" type="Real" array="False" size=""/>
+            <declare name="friends" type="Real" array="False" size=""/>
+            <input variable="startingamount"/>
+            <input variable="friends"/>
+            <assign variable="amountperfriend" expression="startingamount/friends"/>
+            <output expression="&quot;Amount per friend: &quot; &amp;amountperfriend" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
