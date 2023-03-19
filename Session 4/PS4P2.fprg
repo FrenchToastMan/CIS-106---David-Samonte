@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="dimpl"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-19 01:39:39 PM"/>
+        <attribute name="created" value="ZGltcGw7REVTS1RPUC1DTU5ESUk3OzIwMjMtMDMtMTk7MDE6MjQ6NDEgUE07Mjg4NA=="/>
+        <attribute name="edited" value="ZGltcGw7REVTS1RPUC1DTU5ESUk3OzIwMjMtMDMtMTk7MDE6Mzk6MzkgUE07MTszMDA1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pricepershare" type="Real" array="False" size=""/>
+            <declare name="currentstockprice" type="Real" array="False" size=""/>
+            <declare name="quantityofstock" type="Real" array="False" size=""/>
+            <declare name="value" type="Real" array="False" size=""/>
+            <input variable="pricepershare"/>
+            <input variable="currentstockprice"/>
+            <input variable="quantityofstock"/>
+            <assign variable="value" expression="(currentstockprice-pricepershare)*quantityofstock"/>
+            <output expression="&quot;The value of this stock is $&quot;&amp; value" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
